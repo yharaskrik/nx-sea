@@ -1,0 +1,19 @@
+{
+  "name": "nx-sea",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "executors": "./executors.json",
+  "dependencies": {
+    "postject": "^1.0.0-alpha.5"
+  },
+  "repository": {
+    "url": "https://github.com/yharaskrik/nx-sea",
+    "directory": "libs/nx-sea"
+  },
+  "author": {
+    "url": "https://https://github.com/yharaskrik",
+    "name": "Jay Bell",
+    "email": "jay@trellis.org"
+  },
+  "license": "MIT"
+}

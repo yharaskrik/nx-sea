@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "nest-commander-sea-cli",
+  "npmScope": "nx-sea",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",

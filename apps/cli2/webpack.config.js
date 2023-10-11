@@ -2,8 +2,9 @@ const { composePlugins, withNx } = require('@nrwl/webpack');
 
 // Nx plugins for webpack.
 module.exports = composePlugins(withNx(), (config) => {
+  config.mode = 'production';
+
   // Update the webpack config as needed here.
   // e.g. `config.plugins.push(new MyPlugin())`
-  console.log(JSON.stringify(config, null, 4));
   return config;
 });

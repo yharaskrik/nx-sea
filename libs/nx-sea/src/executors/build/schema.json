@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "Build executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "nodePath": {
+      "type": "string",
+      "description": "If a custom Node binary was compiled or downloaded you can use it to create your own SEA if you want."
+    },
+    "entryPoint": {
+      "type": "string",
+      "description": "The name of the JavaScript file without the extension to inject into the SEA."
+    },
+    "directory": {
+      "type": "string",
+      "description": "The path at which the output of the build process is stored. This should be where the entryPoint is."
+    },
+    "removeSignature": {
+      "type": "boolean",
+      "description": "Whether to remove the signature of the binary or not. Only applicable to windows.",
+      "default": true
+    }
+  },
+  "required": ["entryPoint", "directory"]
+}
